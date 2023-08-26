@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html" target="" rel="noopener noreferrer">HOME</a></li>
+                    <li><a href="ourclinic.html" target="" rel="noopener noreferrer">OUR CLINIC</a></li>
+                    <li><a href="ourwork.html" target="" rel="noopener noreferrer">OUR WORK</a></li>
+                    <li><a href="appointment.html" class="btn">Book an Appointment</a></li>
+                </ul>
+            </nav>
+            <img src="icons/menu1.png" class="menu" onclick="menutoggle()">
+            
+        </div>
+        <div class="container">
+            
+            <div class="header-text">
+                <h1>ALL SMILES FAMILY DENTISTRY</h1>
+            </div>
+            <div class="contactinfo">
+                <h4>Address : 103, First Floor, Vardhaman BeePee Plaza, Plot Number 1, Sector 5 Dwarka,Delhi 110075</h4>
+                <br>
+                <h4>Phone Number : +91-8800216727</h4>
+                <br>
+                <h4>Emaild :  vinaykhatak25@gmail.com</h4>
+            </div>
+        </div>
+    </section>
+    
+    <div class="small-container">
+        <img src=images/IMG_20220805_103515.jpg width="90%"class="center">
+    </div>
+    <!--DENTAL PROBLEMS-->
+    <div class="small-container">
+        <h2>DENTAL PROBLEMS</h2>
+        <div class="row">
+            <div class="col-7">
+                <img src="icons/1.png">
+            </div>
+            <div class="col-7">
+                <img src="icons/2.png">
+            </div>
+            <div class="col-7">
+                <img src="icons/3.png">
+            </div>
+            <div class="col-7">
+                <img src="icons/4.png">
+            </div>
+            <div class="col-7">
+                <img src="icons/5.png">
+            </div>
+            <div class="col-7">
+                <img src="icons/6.png">
+            </div>
+            <div class="col-7">
+                <img src="icons/7.png">
+            </div>
+        </div>
+        <ul class="problist" style="list-style-type:none ;">
+            <li>TOOTHACHE</li>
+            <li>TOOTH DECAY & CARIES</li>
+            <li>BROKEN TOOTH</li>
+            <li>GUM PROBLEMS</li>
+            <li>WISDOM TOOTH</li>
+            <li>MISALIGNED TOOTH</li>
+            <li>MISSING TEETH</li>
+        </ul>
+    </div>
+    <!--- OUR SERVIVES-->
+    <div class="small-container">
+        <h2>OUR SERVICES</h2>
+        <div class="row">
+            <div class="col-8">
+                <img src="Services/Dentures.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Orthodontic-Braces.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Root_Canal_Surgery.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Complete-Health.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Teeth-Whitening-1.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Gums-Treatment.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Porcelain-Crowns.png">
+            </div>
+            <div class="col-8">
+                <img src="Services/Full-Mouth-Rehabilitation.png">
+            </div>
+        </div>
+        <ul class="problist" style="list-style-type:none ;">
+            <li>DENTURES</li>
+            <li>ORTHODONTIC BRACES</li>
+            <li>ROOT CANAL SURGERY</li>
+            <li>COMPLETE HEALTH</li>
+            <li>TEETH WHITENING</li>
+            <li>GUMS TREATMENT</li>
+            <li>PORCELAIN CROWNS</li>
+            <li>FULL MOUTH REHABILITATION</li>
+        </ul>
+    </div>
+    <div class="footer-1">
+        <h1 style="text-decoration: underline;">ABOUT THE DOCTOR</h1>
+        <h1>Dr. Vinay Khatak</h1>
+        <h3>PGI Rohtak</h3>
+        <h3>Formerly at : Dr R.M.L. Hospital</h3>
+        <h3>Ex-Resident : VMMC and Safdarjung Hospital</h3>
+        <br><br>
+        <hr>
+        <p>Made by Harsh Bagri</p>
+    
+    </div>
+    </div>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px";
+            }
+            else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

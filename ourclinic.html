@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html" target="" rel="noopener noreferrer">HOME</a></li>
+                    <li><a href="ourclinic.html" target="" rel="noopener noreferrer">OUR CLINIC</a></li>
+                    <li><a href="ourwork.html" target="" rel="noopener noreferrer">OUR WORK</a></li>
+                    <li><a href="appointment.html" class="btn">Book an Appointment</a></li>
+                </ul>
+            </nav>
+            <img src="icons/menu1.png" class="menu" onclick="menutoggle()">   
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <h1>ALL SMILES FAMILY DENTISTRY</h1>
+            </div>
+        </div>
+    </section>
+    <div class="small-container">
+        <h2>OUR CLINIC</h2>
+        <div class="row">
+            <div class="col-5">
+                <img src="images/IMG_20220805_103406.jpg">
+            </div>
+            <div class="col-5">
+                <img src="images/IMG_20220805_103504.jpg">
+            </div>
+            <div class="col-5">
+                <img src="images/IMG_20220805_103528.jpg">
+            </div>
+            <div class="col-5">
+                <img src="images/IMG_20220805_103522.jpg">
+            </div>
+            <div class="col-5">
+                <img src="images/IMG_20220805_103800.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="footer-1">
+        <h1 style="text-decoration: underline;">ABOUT THE DOCTOR</h1>
+        <h1>Dr. Vinay Khatak</h1>
+        <h3>PGI Rohtak</h3>
+        <h3>Formerly at : Dr R.M.L. Hospital</h3>
+        <h3>Ex-Resident : VMMC and Safdarjung Hospital</h3>
+        <br><br>
+        <hr>
+        <p>Made by Harsh Bagri</p>
+    
+    </div>
+    </div>
+    <script>
+        var globalmenuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px";
+            }
+            else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

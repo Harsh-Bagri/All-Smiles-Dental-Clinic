@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html" target="" rel="noopener noreferrer">HOME</a></li>
+                    <li><a href="ourclinic.html" target="" rel="noopener noreferrer">OUR CLINIC</a></li>
+                    <li><a href="ourwork.html" target="" rel="noopener noreferrer">OUR WORK</a></li>
+                    <li><a href="appointment.html" class="btn">Book an Appointment</a></li>
+                </ul>
+            </nav>
+           <img src="icons/menu1.png" class="menu" onclick="menutoggle()">
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <h1>ALL SMILES FAMILY DENTISTRY</h1>
+            </div>
+        </div>
+    </section>
+    <div class="main">
+        <div class="register">
+            <h2>BOOK AN APPOINTMENT</h2>
+            <form id="register" method="post">
+                <label>Name : </label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <br><br>
+                <label>Your Age : </label>
+                <br>
+                <input type="number" name="age" id="name" placeholder="Enter your age">
+                <br><br>
+                <label>Email Id : </label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter your Email Id">
+                <br><br>
+                <label>Phone Number : </label>
+                <br>
+                <input type="number" name="phone" id="name" placeholder="Enter your phone number">
+                <br><br>
+                <label>Date & Time of Appointment : </label>
+                <br>
+                <input type="datetime-local" name="Date" id="name" placeholder="Enter Date and Time">
+                <br><br>
+                <input type="submit" value="Submit" name="submit" id="submit">
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="footer-1">
+        <h1 style="text-decoration: underline;">ABOUT THE DOCTOR</h1>
+        <h1>Dr. Vinay Khatak</h1>
+        <h3>PGI Rohtak</h3>
+        <h3>Formerly at : Dr R.M.L. Hospital</h3>
+        <h3>Ex-Resident : VMMC and Safdarjung Hospital</h3>
+        <br><br>
+        <hr>
+        <p>Made by Harsh Bagri</p>
+    
+    </div>
+    </div>
+    <!-----js for toggle menu----->
+    <script>
+        var globalmenuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px";
+            }
+            else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>    
